@@ -51,6 +51,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/equipment', require('./routes/equipment'));
 app.use('/api/packages', require('./routes/packages'));
 app.use('/api/financing', require('./routes/financing'));
+app.use('/api/financing-options', require('./routes/financing'));
 app.use('/api/quotes', require('./routes/quotes'));
 
 // Health check route

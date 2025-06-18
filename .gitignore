@@ -51,3 +51,4 @@ supabase/.temp
 
 # Server dependencies
 server/node_modules/
+.vercel
