@@ -84,6 +84,21 @@ export const AuthProvider = ({ children }) => {
       setIsLoading(true);
       setError(null);
       
+      // First check if we have a session
+      const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+      
+      if (sessionError) {
+        console.error('Session error:', sessionError);
+      }
+      
+      if (session?.user) {
+        console.log('Found existing session for user:', session.user.id);
+        setUser(session.user);
+        await loadUserProfile(session.user.id);
+        return;
+      }
+      
+      // If no session, try to get user directly
       const { data: { user }, error } = await supabase.auth.getUser();
       
       if (error) {

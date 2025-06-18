@@ -17,31 +17,52 @@ const { supabase } = require('./lib/supabase');
 
 const app = express();
 
-// Middleware
+// Improved CORS configuration
 app.use(cors({
   origin: function (origin, callback) {
-    // Allow requests with no origin
+    console.log('CORS request from origin:', origin);
+    
+    // Allow requests with no origin (same-origin requests, mobile apps, etc.)
     if (!origin) return callback(null, true);
     
-    // Allow localhost origins
+    // Allow localhost origins for development
     if (origin.includes('localhost') || origin.includes('127.0.0.1')) {
       return callback(null, true);
     }
     
-    // Allow Vercel preview URLs
+    // Allow all Vercel domains
     if (origin.includes('vercel.app')) {
       return callback(null, true);
     }
     
+    // Allow all origins in production (since we're using RLS for security)
+    console.log('Allowing origin:', origin);
     callback(null, true);
   },
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'],
+  allowedHeaders: [
+    'Content-Type', 
+    'Authorization', 
+    'X-Requested-With',
+    'Accept',
+    'Origin',
+    'Access-Control-Request-Method',
+    'Access-Control-Request-Headers'
+  ],
+  exposedHeaders: ['Content-Length', 'X-Foo', 'X-Bar'],
+  preflightContinue: false,
+  optionsSuccessStatus: 200
 }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Explicit OPTIONS handler for preflight requests
+app.options('*', (req, res) => {
+  console.log('Preflight OPTIONS request for:', req.path);
+  res.sendStatus(200);
+});
 
 // Make supabase available to routes
 app.locals.supabase = supabase;

@@ -1,6 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+// Use relative API URL in production, localhost in development
+const API_URL = process.env.REACT_APP_API_URL || 
+  (process.env.NODE_ENV === 'production' ? '/api' : 'http://localhost:5000/api');
+
+console.log('API_URL configured as:', API_URL);
 
 export const useBackend = () => {
   const [catalog, setCatalog] = useState({});
