@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
-export const useMongoBackend = () => {
+export const useBackend = () => {
   const [catalog, setCatalog] = useState({});
   const [packages, setPackages] = useState([]);
   const [financingOptions, setFinancingOptions] = useState([]);

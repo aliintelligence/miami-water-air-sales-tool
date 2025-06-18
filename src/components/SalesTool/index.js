@@ -4,7 +4,7 @@ import { calculateMonthlyPayment } from '../../utils/financeCalculator';
 import { useTranslation } from '../../utils/i18n';
 import { usePdfGenerator } from '../../hooks/usePdfGenerator';
 import { useSignNow } from '../../hooks/useSignNow';
-import { useMongoBackend } from '../../hooks/useMongoBackend';
+import { useBackend } from '../../hooks/useBackend';
 
 // Component Imports
 import EquipmentSelector from './EquipmentSelector';
@@ -74,7 +74,7 @@ export default function SalesTool() {
   const [result, setResult] = useState(null);
 
   // Get catalog data
-  const { catalog, packages, financingOptions } = useMongoBackend();
+  const { catalog, packages, financingOptions } = useBackend();
 
   // Handle screen orientation changes
   useEffect(() => {

@@ -2,7 +2,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import { useMongoBackend } from '../../hooks/useMongoBackend';
+import { useBackend } from '../../hooks/useBackend';
 import { useTranslation } from '../../utils/i18n';
 import CatalogEditor from './CatalogEditor';
 import PackageEditor from './PackageEditor';
@@ -33,7 +33,7 @@ function ConfigurationPanel() {
     deleteCatalogItemById,
     getAllEquipment,
     refreshData
-  } = useMongoBackend();
+  } = useBackend();
 
   // Flattened list for PackageEditor
   const allEquipmentFlat = useMemo(() => {
