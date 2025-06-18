@@ -1,23 +1,15 @@
 const express = require('express');
 const router = express.Router();
 
-// Get all quotes (filtered by user role)
+// Get all quotes (no auth middleware - handled by RLS)
 router.get('/', async (req, res) => {
   try {
     const supabase = req.app.locals.supabase;
-    const userId = req.user?.id; // Assuming auth middleware sets req.user
     
-    let query = supabase
+    const { data: quotes, error } = await supabase
       .from('quotes')
       .select('*')
       .order('created_at', { ascending: false });
-    
-    // If not admin, only show their own quotes
-    if (req.user?.role !== 'admin') {
-      query = query.eq('sales_rep_id', userId);
-    }
-    
-    const { data: quotes, error } = await query;
     
     if (error) throw error;
     
@@ -44,11 +36,6 @@ router.get('/:id', async (req, res) => {
       return res.status(404).json({ error: 'Quote not found' });
     }
     
-    // Check access rights
-    if (req.user?.role !== 'admin' && quote.sales_rep_id !== req.user?.id) {
-      return res.status(403).json({ error: 'Access denied' });
-    }
-    
     res.json(quote);
   } catch (error) {
     console.error('Quote fetch error:', error);
@@ -67,7 +54,6 @@ router.post('/', async (req, res) => {
     const quoteData = {
       ...req.body,
       quote_number: quoteNumber,
-      sales_rep_id: req.user?.id || req.body.sales_rep_id,
       status: 'draft'
     };
     
@@ -91,21 +77,6 @@ router.put('/:id', async (req, res) => {
   try {
     const supabase = req.app.locals.supabase;
     
-    // Check ownership first
-    const { data: existing } = await supabase
-      .from('quotes')
-      .select('sales_rep_id')
-      .eq('id', req.params.id)
-      .single();
-    
-    if (!existing) {
-      return res.status(404).json({ error: 'Quote not found' });
-    }
-    
-    if (req.user?.role !== 'admin' && existing.sales_rep_id !== req.user?.id) {
-      return res.status(403).json({ error: 'Access denied' });
-    }
-    
     const { data: updated, error } = await supabase
       .from('quotes')
       .update(req.body)
@@ -122,14 +93,10 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-// Delete quote (admin only)
+// Delete quote
 router.delete('/:id', async (req, res) => {
   try {
     const supabase = req.app.locals.supabase;
-    
-    if (req.user?.role !== 'admin') {
-      return res.status(403).json({ error: 'Admin access required' });
-    }
     
     const { error } = await supabase
       .from('quotes')
@@ -161,10 +128,6 @@ router.post('/:id/send', async (req, res) => {
       return res.status(404).json({ error: 'Quote not found' });
     }
     
-    // Check ownership for reps
-    if (req.user?.role !== 'admin' && quote.sales_rep_id !== req.user?.id) {
-      return res.status(403).json({ error: 'Access denied' });
-    }
     
     // TODO: Integrate with SignNow service
     // For now, just update the status
@@ -195,14 +158,9 @@ router.get('/stats/summary', async (req, res) => {
   try {
     const supabase = req.app.locals.supabase;
     
-    // Build base query based on user role
-    let baseQuery = supabase.from('quotes').select('status, total');
-    
-    if (req.user?.role !== 'admin') {
-      baseQuery = baseQuery.eq('sales_rep_id', req.user?.id);
-    }
-    
-    const { data: quotes, error } = await baseQuery;
+    const { data: quotes, error } = await supabase
+      .from('quotes')
+      .select('status, total');
     
     if (error) throw error;
     
