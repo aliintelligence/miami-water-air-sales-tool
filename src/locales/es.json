@@ -1,0 +1,346 @@
+{
+  "app": {
+    "title": "Miami Water & Air",
+    "subtitle": "Generador de Cotizaciones",
+    "loading": "Cargando...",
+    "error": "Error"
+  },
+  "navigation": {
+    "salesCalculator": "Calculadora de Ventas",
+    "equipmentInfo": "Información de Equipos",
+    "adminPanel": "Panel de Administración",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "add": "Añadir",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar"
+  },
+  "salesTool": {
+    "steps": {
+      "equipment": "Equipo",
+      "financing": "Financiamiento",
+      "customer": "Cliente",
+      "review": "Revisión"
+    },
+    "equipment": {
+      "title": "Paso 1: Seleccionar Equipo",
+      "viewPackages": "Ver Paquetes",
+      "packageTitle": "Paquete",
+      "includes": "Incluye:",
+      "save": "Ahorro",
+      "totalPrice": "Costo Total del Equipo",
+      "removePackage": "Eliminar Paquete",
+      "packageInfo": "Ha seleccionado un paquete. Este conjunto preconfigurado incluye todo el equipo que necesita para una solución completa de tratamiento de agua, a un precio con descuento en comparación con la compra individual de artículos.",
+      "nextButton": "Siguiente: Opciones de Financiamiento",
+      "packagePrice": "Precio de Paquete:"
+    },
+    "packages": {
+      "title": "Paquetes Destacados",
+      "save": "Ahorre {{percentage}}%",
+      "includes": "Este paquete incluye:",
+      "benefits": "Beneficios del Paquete:",
+      "benefitsList": {
+        "complete": "Solución completa de tratamiento de agua",
+        "discounted": "Precio con descuento",
+        "simplified": "Instalación simplificada",
+        "coordinated": "Componentes coordinados del sistema"
+      },
+      "selectButton": "Seleccionar Este Paquete",
+      "noPackages": "No hay paquetes disponibles",
+      "tryCustom": "Intente crear selecciones personalizadas de equipos",
+      "includesInstallation": "Todos los paquetes incluyen instalación profesional"
+    },
+    "financing": {
+      "title": "Paso 2: Opciones de Financiamiento",
+      "company": "Compañía de Financiamiento",
+      "termLength": "Duración del Plazo",
+      "selectTerm": "Seleccionar Plazo",
+      "pleaseSelect": "Por favor seleccione un plazo.",
+      "customRate": "Tasa Personalizada y Pago",
+      "interestRate": "Tasa de Interés (%)",
+      "defaultRate": "Predeterminado: {{rate}}%",
+      "selectPlanFirst": "Seleccione Plan Primero",
+      "paymentSummary": "Resumen de Pago",
+      "monthlyPayment": "Pago Mensual",
+      "program": "Programa",
+      "term": "Plazo",
+      "totalCost": "Costo Total",
+      "revolving": "Renovable",
+      "months": "{{term}} meses",
+      "about": "Acerca de {{name}}",
+      "disclaimers": {
+        "zeroApr": "* El financiamiento al 0% APR requiere una compra mínima y crédito aprobado. El pago mensual mostrado es igual al precio de compra (excluyendo impuestos) dividido por el número de meses en el plazo. El último pago puede variar debido al redondeo. Se requieren pagos mensuales mínimos.",
+        "revolving": "* La cuenta renovable requiere crédito aprobado. El pago mensual mostrado es el pago mínimo adeudado (1% del precio de compra). Pagar solo esta cantidad extenderá el tiempo para pagar la compra y aumentará la cantidad total pagada.",
+        "longTerm": "* Las opciones de financiamiento a largo plazo pueden incluir tarifas adicionales. Las tasas están sujetas a aprobación crediticia. Pueden aplicarse restricciones de valor de propiedad. Consulte al representante para más detalles."
+      },
+      "nextButton": "Siguiente: Información del Cliente"
+    },
+    "customer": {
+      "title": "Paso 3: Información del Cliente",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "city": "Ciudad",
+      "state": "Estado",
+      "zip": "Código Postal",
+      "selectState": "Seleccionar Estado",
+      "nextButton": "Siguiente: Revisar Pedido"
+    },
+    "review": {
+      "title": "Paso 4: Revisar y Confirmar",
+      "customerInfo": "Información del Cliente",
+      "name": "Nombre:",
+      "email": "Correo Electrónico:",
+      "phone": "Teléfono:",
+      "address": "Dirección:",
+      "editCustomer": "Editar Información del Cliente",
+      "orderSummary": "Resumen del Pedido",
+      "selectedEquipment": "Equipo Seleccionado",
+      "financingDetails": "Detalles de Financiamiento",
+      "provider": "Proveedor:",
+      "interestRate": "Tasa de Interés:",
+      "term": "Plazo:",
+      "monthlyPayment": "Pago Mensual:",
+      "totalCost": "Costo Total de Financiamiento:",
+      "includedItems": "Todos los precios incluyen:",
+      "installationItems": {
+        "installation": "Instalación profesional",
+        "taxes": "Impuestos aplicables",
+        "warranty": "Cobertura completa de garantía",
+        "support": "Soporte al cliente 24/7"
+      },
+      "total": "Total:",
+      "completeButton": "Completar Venta y Generar Documento"
+    },
+    "presentationMode": {
+      "title": "Su Solución Personalizada de Tratamiento de Agua",
+      "selected": "Sistema Seleccionado",
+      "includes": "Incluye:",
+      "benefits": "Beneficios del Sistema",
+      "benefitsList": {
+        "clean": "✓ Agua Limpia y Filtrada",
+        "cleanDesc": "En toda su casa, disfrute de agua libre de contaminantes e impurezas.",
+        "reduced": "✓ Mantenimiento Reducido",
+        "reducedDesc": "Proteja sus electrodomésticos y tuberías contra la acumulación de sarro y la corrosión.",
+        "soft": "✓ Agua Suave y Lujosa",
+        "softDesc": "Disfrute de piel y cabello más suaves, además de ropa más limpia y brillante.",
+        "professional": "✓ Instalación Profesional",
+        "professionalDesc": "Configuración completa por nuestros técnicos certificados con cobertura total de garantía."
+      },
+      "editQuote": "Editar Cotización",
+      "completePurchase": "Completar Compra",
+      "switchButton": "Cambiar a Vista de Presentación"
+    },
+    "success": {
+      "title": "¡Éxito!",
+      "message": "Su acuerdo ha sido generado y enviado a:",
+      "nextSteps": "Siguientes pasos:",
+      "stepsList": {
+        "email": "El cliente recibirá un correo electrónico con instrucciones para firmar el documento electrónicamente",
+        "notification": "Se le notificará una vez que completen el proceso de firma",
+        "installation": "La instalación se programará después de completar la firma"
+      },
+      "newQuote": "Iniciar Nueva Cotización"
+    },
+    "priceEditor": {
+      "editPrice": "Editar Precio",
+      "edit": "Editar",
+      "originalPrice": "Precio Original",
+      "newPrice": "Precio Nuevo",
+      "applyDiscount": "Aplicar Descuento",
+      "apply": "Aplicar",
+      "discountReason": "Razón del Descuento",
+      "selectReason": "Seleccionar una razón",
+      "reasons": {
+        "managerApproval": "Aprobación del Gerente",
+        "seasonalPromotion": "Promoción de Temporada",
+        "competitiveMatch": "Igualación de Precio Competitivo",
+        "loyaltyDiscount": "Descuento por Lealtad",
+        "volumeDiscount": "Descuento por Volumen",
+        "other": "Otro"
+      },
+      "summary": "Resumen del Descuento",
+      "discountApplied": "Descuento Aplicado",
+      "discount": "descuento",
+      "specialDiscount": "Descuento Especial Aplicado",
+      "managerApprovalRequired": "Se Requiere Aprobación del Gerente",
+      "managerApprovalMessage": "Este descuento excede el límite estándar y requiere aprobación del gerente antes de finalizar.",
+      "managerApprovalNeeded": "Este descuento requiere aprobación del gerente. ¿Ha autorizado un gerente este descuento?",
+      "currentPrice": "Precio Actual"
+    },
+    "tRecommendations": {
+      "title": "Recomendaciones de Paquete por Valor T",
+      "enterTValue": "Ingrese el Valor T del Cliente ($)",
+      "description": "Ingrese la cantidad mensual que su cliente actualmente gasta en agua, jabón, productos de limpieza, etc.",
+      "findPackages": "Buscar Paquetes Coincidentes",
+      "recommendedSolutions": "Soluciones Recomendadas",
+      "selectBestOption": "Seleccionar Mejor Opción",
+      "selectThisOption": "Seleccionar Esta Opción",
+      "productsIncluded": "productos incluidos",
+      "noMatches": "No se encontraron paquetes coincidentes para el valor T: $",
+      "tryDifferent": "Intente con un valor T diferente o ajuste sus ofertas de paquetes y opciones de financiamiento."
+    }
+  },
+  "equipmentCategories": {
+    "conditioners": "Acondicionadores de Agua",
+    "filters": "Filtros para Toda la Casa",
+    "drinkingWater": "Sistemas de Agua Potable",
+    "upgrades": "Actualizaciones de Sistema",
+    "nonRainsoft": "Productos No-RainSoft",
+    "addons": "Complementos Especiales",
+    "default": "Producto"
+  },
+  "equipmentInfo": {
+    "title": "Información de Equipos",
+    "allEquipment": "Todos los Equipos",
+    "viewDetails": "Ver Detalles",
+    "packagePrice": "{{price}} (paquete)",
+    "backToList": "Volver a la Lista de Equipos",
+    "price": "Precio:",
+    "packagePrice": "Precio de Paquete:",
+    "subscription": "Suscripción:",
+    "pdfEnglish": "Hoja de Producto (Inglés)",
+    "pdfSpanish": "Hoja de Producto (Español)",
+    "technicalSpecs": "Especificaciones Técnicas",
+    "addToQuote": "Añadir a Cotización",
+    "defaultDescription": "Contáctenos para obtener información detallada sobre este producto.",
+    "notFound": "Equipo no encontrado",
+    "image": "Imagen del Equipo"
+  },
+  "admin": {
+    "title": "Panel de Configuración de Administrador",
+    "logout": "Cerrar Sesión",
+    "tabs": {
+      "catalog": "Catálogo de Equipos",
+      "packages": "Paquetes",
+      "financing": "Opciones de Financiamiento"
+    },
+    "catalog": {
+      "name": "Nombre",
+      "imageFilename": "Nombre de Archivo de Imagen",
+      "price": "Precio",
+      "packagePrice": "Precio de Paquete",
+      "type": "Tipo",
+      "subscriptionInfo": "Información de Suscripción",
+      "actions": "Acciones",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "addNew": "Añadir Nuevo {{name}}",
+      "tips": {
+        "title": "Consejos:",
+        "imageFilename": "Ingrese el nombre exacto del archivo de imagen (por ejemplo, 'mi-producto.png'). Las imágenes deben colocarse manualmente en la carpeta `public/images/equipment/`.",
+        "defaultId": "Si el nombre del archivo está en blanco, el sistema intentará usar `[ItemID].jpg` de forma predeterminada en las páginas de visualización.",
+        "addNew": "Haga clic en \"Añadir Nuevo...\" para crear una nueva fila de artículo lista para editar.",
+        "edit": "Haga clic en \"Editar\" para modificar un artículo, luego \"Guardar\" cuando termine para salir del modo de edición.",
+        "delete": "Haga clic en \"Eliminar\" para eliminar un artículo permanentemente (requiere confirmación).",
+        "autoSave": "Los cambios se guardan automáticamente en el almacenamiento local del navegador."
+      }
+    },
+    "packages": {
+      "individualPrice": "Precio Individual:",
+      "packagePrice": "Precio de Paquete:",
+      "savings": "Ahorro:",
+      "includes": "Incluye:",
+      "noItems": "No hay artículos seleccionados",
+      "edit": "Editar",
+      "save": "Guardar",
+      "remove": "Eliminar",
+      "cancel": "Cancelar",
+      "addNew": "+ Añadir Nuevo Paquete",
+      "selectIncluded": "Seleccionar Equipos Incluidos:",
+      "noItems": "No se encontraron equipos en el catálogo."
+    },
+    "financing": {
+      "description": "Descripción:",
+      "interestRate": "Tasa de Interés:",
+      "terms": "Plazos:",
+      "paymentFactor": "Factor de Pago:",
+      "edit": "Editar",
+      "save": "Guardar",
+      "remove": "Eliminar",
+      "cancel": "Cancelar",
+      "id": "ID:",
+      "name": "Nombre:",
+      "description": "Descripción:",
+      "interestRate": "Tasa de Interés (%):",
+      "interestRateNote": "(Dejar en blanco para N/A)",
+      "terms": "Plazos (Meses, separados por comas):",
+      "termsPlaceholder": "ej., 12, 24, 36, 0",
+      "termsNote": "Ingrese 0 para planes renovables o planes sin plazos fijos.",
+      "paymentFactor": "Factor de Pago (Renovable):",
+      "paymentFactorNote": "(Opcional)",
+      "paymentFactorPlaceholder": "ej., 0.01 para 1%",
+      "addNew": "+ Añadir Nueva Opción de Financiamiento",
+      "noOptions": "No hay opciones de financiamiento configuradas todavía. Haga clic en el botón de abajo para añadir una."
+    },
+    "login": {
+      "title": "Inicio de Sesión de Administrador",
+      "password": "Contraseña:",
+      "loginButton": "Iniciar Sesión",
+      "incorrectPassword": "Contraseña incorrecta. Por favor intente de nuevo."
+    }
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Español",
+    "haitianCreole": "Kreyòl Ayisyen"
+  },
+  "specialAddons": {
+    "soapSupply5Years": {
+      "name": "Suministro de Jabón de por Vida (5 Años Incluidos)",
+      "info": "Primeros 5 años incluidos, $99/año después"
+    },
+    "soapSupply10Years": {
+      "name": "Suministro de Jabón de por Vida (10 Años Incluidos)",
+      "info": "Primeros 10 años incluidos, $99/año después"
+    },
+    "saltDelivery": {
+      "name": "Servicio Premium de Entrega de Sal",
+      "info": "Primer año incluido, $149/año después"
+    },
+    "waterQualityMonitoring": {
+      "name": "Monitoreo Extendido de Calidad de Agua",
+      "info": "Primeros 2 años incluidos, $129/año después"
+    },
+    "disclaimer": "Los servicios de suscripción pueden cancelarse en cualquier momento. Precios sujetos a cambios."
+  },
+  "bundleDiscount": {
+    "applied": "¡Precio de paquete aplicado!",
+    "description": "Estás obteniendo precios especiales porque has seleccionado un acondicionador con filtros."
+  },
+  "subscriptionAddons": {
+    "selected": "¡Complementos de Suscripción Seleccionados!",
+    "description": "Tu cotización incluye complementos especiales con opciones de suscripción. El precio inicial cubre el período incluido."
+  },
+  "errors": {
+    "catalogLoadFailed": "No se pudo cargar los datos del equipo",
+    "refreshPage": "Por favor verifique su conexión e intente actualizar la página."
+  },
+  "signingMethod": {
+    "title": "Seleccionar Método de Firma",
+    "email": "Enviar por Correo Electrónico",
+    "sendTo": "Enviar a:",
+    "noEmail": "No se proporcionó una dirección de correo electrónico",
+    "sms": "Enviar por Mensaje de Texto (SMS)",
+    "noPhone": "No se proporcionó un número de teléfono",
+    "smsNote": "* Solo números de EE.UU. y Canadá",
+    "notes": "Notas:",
+    "emailInfo": "La firma por correo electrónico funciona para todos los clientes en todo el mundo",
+    "smsInfo": "La firma por SMS solo funciona para números de teléfono de EE.UU. y Canadá",
+    "needInfo": "Necesita un correo electrónico o un número de teléfono para enviar solicitudes de firma",
+    "sentBySms": "Enviado por mensaje de texto al número de teléfono",
+    "smsFollowup": "El cliente recibirá un mensaje de texto con un enlace para firmar el documento"
+  },
+  "download": "Descargar",
+  "general": {
+    "yes": "Sí",
+    "no": "No",
+    "confirm": "Confirmar",
+    "viewDocument": "Ver Documento"
+  }
+}

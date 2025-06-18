@@ -1,0 +1,331 @@
+{
+  "app": {
+    "title": "Miami Water & Air",
+    "subtitle": "Jenerate Pri Estimasyon",
+    "loading": "Chajman...",
+    "error": "Erè"
+  },
+  "navigation": {
+    "salesCalculator": "Kalkilatè Vant",
+    "equipmentInfo": "Enfòmasyon Ekipman",
+    "adminPanel": "Panèl Administrasyon",
+    "back": "Retounen",
+    "next": "Pwochen",
+    "add": "Ajoute",
+    "cancel": "Anile",
+    "close": "Fèmen",
+    "save": "Sove",
+    "delete": "Efase",
+    "edit": "Modifye"
+  },
+  "salesTool": {
+    "steps": {
+      "equipment": "Ekipman",
+      "financing": "Finansman",
+      "customer": "Kliyan",
+      "review": "Revizyon"
+    },
+    "equipment": {
+      "title": "Etap 1: Chwazi Ekipman",
+      "viewPackages": "Gade Pakè yo",
+      "packageTitle": "Pakè",
+      "includes": "Li gen ladan:",
+      "save": "Ekonomize",
+      "totalPrice": "Pri Total Ekipman",
+      "removePackage": "Retire Pakè",
+      "packageInfo": "Ou chwazi yon pakè. Ansanm sa a gen tout ekipman ou bezwen pou yon solisyon konplè pou tretman dlo, avèk yon pri rabè konpare ak lè ou achte atik yo apa.",
+      "nextButton": "Pwochen: Opsyon Finansman",
+      "packagePrice": "Pri Pakè:"
+    },
+    "packages": {
+      "title": "Pakè Espesyal",
+      "save": "Ekonomize {{percentage}}%",
+      "includes": "Pakè sa a gen ladan:",
+      "benefits": "Avantaj Pakè:",
+      "benefitsList": {
+        "complete": "Solisyon konplè pou tretman dlo",
+        "discounted": "Pri rabè",
+        "simplified": "Enstalasyon senp",
+        "coordinated": "Konpozan sistèm kowòdone"
+      },
+      "selectButton": "Chwazi Pakè Sa a",
+      "noPackages": "Pa gen pakè disponib",
+      "tryCustom": "Eseye kreye seleksyon ekipman pèsonalize",
+      "includesInstallation": "Tout pakè yo gen ladan enstalasyon pwofesyonèl"
+    },
+    "financing": {
+      "title": "Etap 2: Opsyon Finansman",
+      "company": "Konpayi Finansman",
+      "termLength": "Dire Tèm",
+      "selectTerm": "Chwazi Tèm",
+      "pleaseSelect": "Tanpri chwazi yon tèm.",
+      "customRate": "To Pèsonalize ak Peman",
+      "interestRate": "To Enterè (%)",
+      "defaultRate": "Defo: {{rate}}%",
+      "selectPlanFirst": "Chwazi Plan Avan",
+      "paymentSummary": "Rezime Peman",
+      "monthlyPayment": "Peman Chak Mwa",
+      "program": "Pwogram",
+      "term": "Tèm",
+      "totalCost": "Pri Total",
+      "revolving": "Renouvlab",
+      "months": "{{term}} mwa",
+      "about": "Enfòmasyon sou {{name}}",
+      "disclaimers": {
+        "zeroApr": "* Finansman 0% APR mande yon acha minimòm ak kredi apwouve. Peman mansyèl la egal ak pri acha a (san taks) divize pa kantite mwa nan tèm lan. Dènye peman an ka varye akoz awondisman. Peman mansyèl minimòm obligatwa.",
+        "revolving": "* Kont renouvlab la mande yon kredi apwouve. Peman mansyèl ki montre a se peman minimòm ki dwe (1% pri acha). Si w peye sèlman kantite sa a, sa ap pwolonje tan pou peye acha a epi ogmante kantite total peye.",
+        "longTerm": "* Opsyon finansman alontèm ka gen frè anplis. To yo sijè a apwobasyon kredi. Restriksyon sou valè pwopriyete ka aplike. Konsilte reprezantan an pou plis detay."
+      },
+      "nextButton": "Pwochen: Enfòmasyon Kliyan"
+    },
+    "customer": {
+      "title": "Etap 3: Enfòmasyon Kliyan",
+      "firstName": "Prenon",
+      "lastName": "Siyati",
+      "email": "Imèl",
+      "phone": "Telefòn",
+      "address": "Adrès",
+      "city": "Vil",
+      "state": "Eta",
+      "zip": "Kòd Postal",
+      "selectState": "Chwazi Eta",
+      "nextButton": "Pwochen: Revize Kòmann"
+    },
+    "review": {
+      "title": "Etap 4: Revize ak Konfime",
+      "customerInfo": "Enfòmasyon Kliyan",
+      "name": "Non:",
+      "email": "Imèl:",
+      "phone": "Telefòn:",
+      "address": "Adrès:",
+      "editCustomer": "Modifye Enfòmasyon Kliyan",
+      "orderSummary": "Rezime Kòmann",
+      "selectedEquipment": "Ekipman Chwazi",
+      "financingDetails": "Detay Finansman",
+      "provider": "Founisè:",
+      "interestRate": "To Enterè:",
+      "term": "Tèm:",
+      "monthlyPayment": "Peman Chak Mwa:",
+      "totalCost": "Pri Total Finansman:",
+      "includedItems": "Tout pri gen ladan:",
+      "installationItems": {
+        "installation": "Enstalasyon pwofesyonèl",
+        "taxes": "Taks aplikab",
+        "warranty": "Garanti konplè",
+        "support": "Sipò kliyan 24/7"
+      },
+      "total": "Total:",
+      "completeButton": "Konplete Vant ak Jenere Dokiman"
+    },
+    "presentationMode": {
+      "title": "Solisyon Tretman Dlo Pèsonalize Ou",
+      "selected": "Sistèm Chwazi",
+      "includes": "Gen Ladan:",
+      "benefits": "Avantaj Sistèm",
+      "benefitsList": {
+        "clean": "✓ Dlo Pwòp ak Filtre",
+        "cleanDesc": "Nan tout kay ou, jwi dlo san polyan ak enpite.",
+        "reduced": "✓ Mwens Antretyen",
+        "reducedDesc": "Pwoteje aparèy elektwomenaje ak plonbri kont akilasyon kal ak wowozyon.",
+        "soft": "✓ Dlo Dous ak Liksiryez",
+        "softDesc": "Jwi po ak cheve ki pi dous, plis rad pi pwòp ak pi klere.",
+        "professional": "✓ Enstalasyon Pwofesyonèl",
+        "professionalDesc": "Konfigirasyon konplè pa teknisyen sètifye nou yo ak garanti konplè."
+      },
+      "editQuote": "Modifye Pri",
+      "completePurchase": "Konplete Acha",
+      "switchButton": "Chanje nan Vi Prezantasyon"
+    },
+    "success": {
+      "title": "Siksè!",
+      "message": "Akò ou a te jenere epi voye bay:",
+      "nextSteps": "Kisa k ap pase apre:",
+      "stepsList": {
+        "email": "Kliyan an pral resevwa yon imèl avèk enstriksyon pou siyen dokiman an elektwonikman",
+        "notification": "W ap resevwa yon notifikasyon lè yo fin konplete pwosesis siyati a",
+        "installation": "Enstalasyon an pral pwograme apre siyati a fin konplete"
+      },
+      "newQuote": "Kòmanse Nouvo Pri"
+    },
+    "priceEditor": {
+      "editPrice": "Modifye Pri",
+      "edit": "Modifye",
+      "originalPrice": "Pri Orijinal",
+      "newPrice": "Nouvo Pri",
+      "applyDiscount": "Aplike Rabè",
+      "apply": "Aplike",
+      "discountReason": "Rezon Rabè",
+      "selectReason": "Chwazi yon rezon",
+      "reasons": {
+        "managerApproval": "Apwobasyon Manadjè",
+        "seasonalPromotion": "Pwomosyon Sezonye",
+        "competitiveMatch": "Egalite Pri Konpetitif",
+        "loyaltyDiscount": "Rabè Fidelite",
+        "volumeDiscount": "Rabè pou Volim",
+        "other": "Lòt"
+      },
+      "summary": "Rezime Rabè",
+      "discountApplied": "Rabè Aplike",
+      "discount": "rabè",
+      "specialDiscount": "Rabè Espesyal Aplike",
+      "managerApprovalRequired": "Apwobasyon Manadjè Obligatwa",
+      "managerApprovalMessage": "Rabè sa a depase limit estanda a epi li mande apwobasyon manadjè anvan finalizasyon.",
+      "managerApprovalNeeded": "Rabè sa a mande apwobasyon manadjè. Èske yon manadjè te otorize rabè sa a?",
+      "currentPrice": "Pri Aktyèl"
+    },
+    "tRecommendations": {
+      "title": "Rekòmandasyon Pakè Valè T",
+      "enterTValue": "Antre Valè T Kliyan ($)",
+      "description": "Antre kantite lajan chak mwa kliyan w lan depanse aktyèlman sou dlo, savon, pwodwi netwayaj, elatriye.",
+      "findPackages": "Jwenn Pakè ki Koresponn",
+      "recommendedSolutions": "Solisyon Rekòmande",
+      "selectBestOption": "Chwazi Pi Bon Opsyon",
+      "selectThisOption": "Chwazi Opsyon Sa a",
+      "productsIncluded": "pwodwi enkli",
+      "noMatches": "Okenn pakè ki koresponn pa jwenn pou valè T: $",
+      "tryDifferent": "Eseye yon valè T diferan oswa ajiste òf pakè ou yo ak opsyon finansman."
+    }
+  },
+  "equipmentCategories": {
+    "conditioners": "Kondisyonè Dlo",
+    "filters": "Filtre pou Kay Konplè",
+    "drinkingWater": "Sistèm Dlo Potab",
+    "upgrades": "Amelyorasyon Sistèm",
+    "nonRainsoft": "Pwodwi Non-RainSoft",
+    "addons": "Konplèman Espesyal",
+    "default": "Pwodwi"
+  },
+  "equipmentInfo": {
+    "title": "Enfòmasyon Ekipman",
+    "allEquipment": "Tout Ekipman",
+    "viewDetails": "Gade Detay",
+    "packagePrice": "{{price}} (pakè)",
+    "backToList": "Retounen nan Lis Ekipman",
+    "price": "Pri:",
+    "packagePrice": "Pri Pakè:",
+    "subscription": "Abònman:",
+    "pdfEnglish": "Fèy Pwodwi (Anglè)",
+    "pdfSpanish": "Fèy Pwodwi (Espanyòl)",
+    "technicalSpecs": "Espesifikasyon Teknik",
+    "addToQuote": "Ajoute nan Estimasyon",
+    "defaultDescription": "Kontakte nou pou enfòmasyon detaye sou pwodwi sa a.",
+    "notFound": "Ekipman pa jwenn",
+    "image": "Imaj Ekipman"
+  },
+  "admin": {
+    "title": "Panèl Konfigirasyon Administratè",
+    "logout": "Dekonekte",
+    "tabs": {
+      "catalog": "Katalòg Ekipman",
+      "packages": "Pakè",
+      "financing": "Opsyon Finansman"
+    },
+    "catalog": {
+      "name": "Non",
+      "imageFilename": "Non Fichye Imaj",
+      "price": "Pri",
+      "packagePrice": "Pri Pakè",
+      "type": "Tip",
+      "subscriptionInfo": "Enfòmasyon Abònman",
+      "actions": "Aksyon",
+      "edit": "Modifye",
+      "delete": "Efase",
+      "addNew": "Ajoute Nouvo {{name}}",
+      "tips": {
+        "title": "Konsèy:",
+        "imageFilename": "Antre non fichye imaj egzat (egzanp, 'pwodwi-mwen.png'). Imaj yo dwe plase manyèlman nan dosye 'public/images/equipment/'.",
+        "defaultId": "Si non fichye a vid, sistèm lan pral eseye itilize '[ItemID].jpg' pa defo sou paj afichaj yo.",
+        "addNew": "Klike sou \"Ajoute Nouvo...\" pou kreye yon nouvo liy atik prè pou modifye.",
+        "edit": "Klike sou \"Modifye\" pou modifye yon atik, epi \"Sove\" lè ou fini pou kite mòd modifikasyon an.",
+        "delete": "Klike sou \"Efase\" pou retire yon atik definitivman (mande konfimasyon).",
+        "autoSave": "Chanjman yo anrejistre otomatikman nan depo lokal navigatè a."
+      }
+    },
+    "packages": {
+      "individualPrice": "Pri Endividyèl:",
+      "packagePrice": "Pri Pakè:",
+      "savings": "Ekonomi:",
+      "includes": "Gen Ladan:",
+      "noItems": "Pa gen atik chwazi",
+      "edit": "Modifye",
+      "save": "Sove",
+      "remove": "Retire",
+      "cancel": "Anile",
+      "addNew": "+ Ajoute Nouvo Pakè",
+      "selectIncluded": "Chwazi Ekipman Ki Ladan:",
+      "noItems": "Pa gen ekipman nan katalòg la."
+    },
+    "financing": {
+      "description": "Deskripsyon:",
+      "interestRate": "To Enterè:",
+      "terms": "Tèm:",
+      "paymentFactor": "Faktè Peman:",
+      "edit": "Modifye",
+      "save": "Sove",
+      "remove": "Retire",
+      "cancel": "Anile",
+      "id": "ID:",
+      "name": "Non:",
+      "description": "Deskripsyon:",
+      "interestRate": "To Enterè (%):",
+      "interestRateNote": "(Kite vid pou N/A)",
+      "terms": "Tèm (Mwa, separe pa vigil):",
+      "termsPlaceholder": "egz., 12, 24, 36, 0",
+      "termsNote": "Antre 0 pou plan renouvlab oswa plan san tèm fiks.",
+      "paymentFactor": "Faktè Peman (Renouvlab):",
+      "paymentFactorNote": "(Opsyonèl)",
+      "paymentFactorPlaceholder": "egz., 0.01 pou 1%",
+      "addNew": "+ Ajoute Nouvo Opsyon Finansman",
+      "noOptions": "Pa gen opsyon finansman konfigire ankò. Klike sou bouton anba a pou ajoute youn."
+    },
+    "login": {
+      "title": "Koneksyon Administratè",
+      "password": "Modpas:",
+      "loginButton": "Konekte",
+      "incorrectPassword": "Modpas pa kòrèk. Tanpri eseye ankò."
+    }
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Español",
+    "haitianCreole": "Kreyòl Ayisyen"
+  },
+  "specialAddons": {
+    "soapSupply5Years": {
+      "name": "Apwovizyònman Savon Pou Lavi (5 Ane Ladan)",
+      "info": "Premye 5 ane enkli, $99/ane apre"
+    },
+    "soapSupply10Years": {
+      "name": "Apwovizyònman Savon Pou Lavi (10 Ane Ladan)",
+      "info": "Premye 10 ane enkli, $99/ane apre"
+    },
+    "saltDelivery": {
+      "name": "Sèvis Livrezon Sèl Premium",
+      "info": "Premye ane enkli, $149/ane apre"
+    },
+    "waterQualityMonitoring": {
+      "name": "Siveyans Kalite Dlo Pwolonje",
+      "info": "Premye 2 ane enkli, $129/ane apre"
+    },
+    "disclaimer": "Sèvis abònman yo ka anile nenpòt lè. Pri sijè a chanje."
+  },
+  "bundleDiscount": {
+    "applied": "Pri pakè aplike!",
+    "description": "W ap jwenn pri espesyal paske ou chwazi yon kondisyonè ak filtre."
+  },
+  "subscriptionAddons": {
+    "selected": "Konplèman Abònman Chwazi!",
+    "description": "Estimasyon ou gen ladan konplèman espesyal ak opsyon abònman. Pri inisyal la kouvri peryòd ki enkli a."
+  },
+  "errors": {
+    "catalogLoadFailed": "Pa kapab chaje done ekipman",
+    "refreshPage": "Tanpri verifye koneksyon ou epi eseye aktyalize paj la."
+  },
+  "download": "Telechaje",
+  "general": {
+    "yes": "Wi",
+    "no": "Non",
+    "confirm": "Konfime",
+    "viewDocument": "Gade Dokiman"
+  }
+}

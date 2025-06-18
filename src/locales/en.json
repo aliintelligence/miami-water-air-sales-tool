@@ -1,0 +1,411 @@
+{
+  "app": {
+    "title": "Miami Water & Air",
+    "subtitle": "Sales Quote Generator",
+    "loading": "Loading...",
+    "error": "Error"
+  },
+  "navigation": {
+    "salesCalculator": "Sales Calculator",
+    "equipmentInfo": "Equipment Info",
+    "adminPanel": "Admin Panel",
+    "back": "Back",
+    "next": "Next",
+    "add": "Add",
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit"
+  },
+  "salesTool": {
+    "steps": {
+      "equipment": "Equipment",
+      "financing": "Financing",
+      "customer": "Customer",
+      "review": "Review"
+    },
+    "equipment": {
+      "title": "Step 1: Select Equipment",
+      "viewPackages": "View Package Deals",
+      "packageTitle": "Package Deal",
+      "includes": "Includes:",
+      "save": "Save",
+      "totalPrice": "Total Equipment Cost",
+      "removePackage": "Remove Package",
+      "packageInfo": "You've selected a package deal. This pre-configured bundle includes all the equipment you need for a complete water treatment solution, at a discounted price compared to purchasing items individually.",
+      "nextButton": "Next: Financing Options",
+      "packagePrice": "Package Price:"
+    },
+    "packages": {
+      "title": "Featured Package Deals",
+      "save": "Save {{percentage}}%",
+      "includes": "This package includes:",
+      "benefits": "Package Benefits:",
+      "benefitsList": {
+        "complete": "Complete water treatment solution",
+        "discounted": "Discounted bundle pricing",
+        "simplified": "Simplified installation",
+        "coordinated": "Coordinated system components"
+      },
+      "selectButton": "Select This Package",
+      "noPackages": "No package deals available",
+      "tryCustom": "Try creating custom equipment selections instead",
+      "includesInstallation": "All packages include professional installation"
+    },
+    "financing": {
+      "title": "Step 2: Financing Options",
+      "company": "Financing Company",
+      "termLength": "Term Length",
+      "selectTerm": "Select Term",
+      "pleaseSelect": "Please select a term.",
+      "customRate": "Custom Rate & Payment",
+      "interestRate": "Interest Rate (%)",
+      "defaultRate": "Default: {{rate}}%",
+      "selectPlanFirst": "Select Plan First",
+      "paymentSummary": "Payment Summary",
+      "monthlyPayment": "Monthly Payment",
+      "program": "Program",
+      "term": "Term",
+      "totalCost": "Total Cost",
+      "revolving": "Revolving",
+      "months": "{{term}} months",
+      "about": "About {{name}}",
+      "disclaimers": {
+        "zeroApr": "* 0% APR financing requires minimum purchase and approved credit. Monthly payment shown is equal to the purchase price (excluding taxes) divided by the number of months in the term. Last payment may vary due to rounding. Minimum monthly payments required.",
+        "revolving": "* Revolving credit account requires approved credit. Monthly payment shown is the minimum payment due (1% of purchase price). Paying only this amount will extend the time to pay off the purchase and increase the total amount paid.",
+        "longTerm": "* Long-term financing options may include additional fees. Rates subject to credit approval. Property value restrictions may apply. See representative for complete details."
+      },
+      "nextButton": "Next: Customer Information"
+    },
+    "customer": {
+      "title": "Step 3: Customer Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "zip": "ZIP Code",
+      "selectState": "Select State",
+      "nextButton": "Next: Review Order"
+    },
+    "review": {
+      "title": "Step 4: Review & Confirm",
+      "customerInfo": "Customer Information",
+      "name": "Name:",
+      "email": "Email:",
+      "phone": "Phone:",
+      "address": "Address:",
+      "editCustomer": "Edit Customer Info",
+      "orderSummary": "Order Summary",
+      "selectedEquipment": "Selected Equipment",
+      "financingDetails": "Financing Details",
+      "provider": "Provider:",
+      "interestRate": "Interest Rate:",
+      "term": "Term:",
+      "monthlyPayment": "Monthly Payment:",
+      "totalCost": "Total Financing Cost:",
+      "includedItems": "All prices include:",
+      "installationItems": {
+        "installation": "Professional installation",
+        "taxes": "Applicable taxes",
+        "warranty": "Full warranty coverage",
+        "support": "24/7 customer support"
+      },
+      "total": "Total:",
+      "completeButton": "Complete Sale & Generate Document"
+    },
+    "presentationMode": {
+      "title": "Your Personalized Water Treatment Solution",
+      "selected": "Selected System",
+      "includes": "Includes:",
+      "benefits": "System Benefits",
+      "benefitsList": {
+        "clean": "✓ Clean, Filtered Water",
+        "cleanDesc": "Throughout your entire home, enjoy water free from contaminants and impurities.",
+        "reduced": "✓ Reduced Maintenance",
+        "reducedDesc": "Protect your appliances and plumbing from scale buildup and corrosion.",
+        "soft": "✓ Soft, Luxurious Water",
+        "softDesc": "Enjoy softer skin and hair, plus cleaner, brighter laundry.",
+        "professional": "✓ Professional Installation",
+        "professionalDesc": "Complete setup by our certified technicians with full warranty coverage."
+      },
+      "editQuote": "Edit Quote",
+      "completePurchase": "Complete Purchase",
+      "switchButton": "Switch to Presentation View"
+    },
+    "success": {
+      "title": "Success!",
+      "message": "Your agreement has been generated and sent to:",
+      "nextSteps": "What happens next:",
+      "stepsList": {
+        "email": "The customer will receive an email with instructions to electronically sign the document",
+        "notification": "You'll be notified once they complete the signature process",
+        "installation": "Installation will be scheduled after signature is complete"
+      },
+      "newQuote": "Start New Quote"
+    },
+    "priceEditor": {
+      "editPrice": "Edit Price",
+      "edit": "Edit",
+      "originalPrice": "Original Price",
+      "newPrice": "New Price",
+      "applyDiscount": "Apply Discount",
+      "apply": "Apply",
+      "discountReason": "Discount Reason",
+      "selectReason": "Select a reason",
+      "reasons": {
+        "managerApproval": "Manager Approval",
+        "seasonalPromotion": "Seasonal Promotion",
+        "competitiveMatch": "Competitive Price Match",
+        "loyaltyDiscount": "Loyalty Discount",
+        "volumeDiscount": "Volume Discount",
+        "other": "Other"
+      },
+      "summary": "Discount Summary",
+      "discountApplied": "Discount Applied",
+      "discount": "discount",
+      "specialDiscount": "Special Discount Applied",
+      "managerApprovalRequired": "Manager Approval Required",
+      "managerApprovalMessage": "This discount exceeds the standard limit and requires manager approval before finalizing.",
+      "managerApprovalNeeded": "This discount requires manager approval. Has a manager authorized this discount?",
+      "currentPrice": "Current Price"
+    },
+    "tRecommendations": {
+      "title": "T Value Package Recommendations",
+      "enterTValue": "Enter Customer's T Value ($)",
+      "description": "Enter the monthly amount your customer currently spends on water, soap, cleaning products, etc.",
+      "findPackages": "Find Matching Packages",
+      "recommendedSolutions": "Recommended Solutions",
+      "selectBestOption": "Select Best Option",
+      "selectThisOption": "Select This Option",
+      "productsIncluded": "products included",
+      "noMatches": "No matching packages found for T value: $",
+      "tryDifferent": "Try a different T value or adjust your package offerings and financing options."
+    }
+  },
+  "equipmentCategories": {
+    "conditioners": "Water Conditioners",
+    "filters": "Whole House Filters",
+    "drinkingWater": "Drinking Water Systems",
+    "upgrades": "System Upgrades",
+    "nonRainsoft": "Non-RainSoft Products",
+    "addons": "Special Add-ons",
+    "default": "Product"
+  },
+  "equipmentInfo": {
+    "title": "Equipment Information",
+    "allEquipment": "All Equipment",
+    "viewDetails": "View Details",
+    "packagePrice": "{{price}} (package)",
+    "backToList": "Back to Equipment List",
+    "price": "Price:",
+    "packagePrice": "Package Price:",
+    "subscription": "Subscription:",
+    "pdfEnglish": "Product Sheet (English)",
+    "pdfSpanish": "Product Sheet (Español)",
+    "technicalSpecs": "Technical Specifications",
+    "addToQuote": "Add to Quote",
+    "defaultDescription": "Contact us for detailed information about this product.",
+    "notFound": "Equipment not found",
+    "image": "Equipment Image"
+  },
+  "admin": {
+    "title": "Admin Configuration Panel",
+    "logout": "Logout",
+    "tabs": {
+      "catalog": "Equipment Catalog",
+      "packages": "Package Deals",
+      "financing": "Financing Options"
+    },
+    "catalog": {
+      "name": "Name",
+      "imageFilename": "Image Filename",
+      "price": "Price",
+      "packagePrice": "Package Price",
+      "type": "Type",
+      "subscriptionInfo": "Subscription Info",
+      "actions": "Actions",
+      "edit": "Edit",
+      "delete": "Delete",
+      "addNew": "Add New {{name}}",
+      "tips": {
+        "title": "Tips:",
+        "imageFilename": "Enter the exact image filename (e.g., 'my-product.png'). Images must be placed manually in the `public/images/equipment/` folder.",
+        "defaultId": "If filename is blank, the system will try to use `[ItemID].jpg` by default on the display pages.",
+        "addNew": "Click \"Add New...\" to create a new item row ready for editing.",
+        "edit": "Click \"Edit\" to modify an item, then \"Save\" when done to exit edit mode.",
+        "delete": "Click \"Delete\" to remove an item permanently (requires confirmation).",
+        "autoSave": "Changes are automatically saved to the browser's local storage."
+      }
+    },
+    "packages": {
+      "individualPrice": "Individual Price:",
+      "packagePrice": "Package Price:",
+      "savings": "Savings:",
+      "includes": "Includes:",
+      "noItems": "No items selected",
+      "edit": "Edit",
+      "save": "Save",
+      "remove": "Remove",
+      "cancel": "Cancel",
+      "addNew": "+ Add New Package",
+      "selectIncluded": "Select Included Equipment:",
+      "noItems": "No equipment items found in catalog."
+    },
+    "financing": {
+      "description": "Description:",
+      "interestRate": "Interest Rate:",
+      "terms": "Terms:",
+      "paymentFactor": "Payment Factor:",
+      "edit": "Edit",
+      "save": "Save",
+      "remove": "Remove",
+      "cancel": "Cancel",
+      "id": "ID:",
+      "name": "Name:",
+      "description": "Description:",
+      "interestRate": "Interest Rate (%):",
+      "interestRateNote": "(Leave blank for N/A)",
+      "terms": "Terms (Months, comma-separated):",
+      "termsPlaceholder": "e.g., 12, 24, 36, 0",
+      "termsNote": "Enter 0 for revolving plans or plans without fixed terms.",
+      "paymentFactor": "Payment Factor (Revolving):",
+      "paymentFactorNote": "(Optional)",
+      "paymentFactorPlaceholder": "e.g., 0.01 for 1%",
+      "addNew": "+ Add New Financing Option",
+      "noOptions": "No financing options configured yet. Click button below to add one."
+    },
+    "login": {
+      "title": "Admin Login",
+      "password": "Password:",
+      "loginButton": "Login",
+      "incorrectPassword": "Incorrect password. Please try again."
+    }
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Español",
+    "haitianCreole": "Kreyòl Ayisyen"
+  },
+  "specialAddons": {
+    "soapSupply5Years": {
+      "name": "Lifetime Soap Supply (5 Years Included)",
+      "info": "First 5 years included, $99/year after"
+    },
+    "soapSupply10Years": {
+      "name": "Lifetime Soap Supply (10 Years Included)",
+      "info": "First 10 years included, $99/year after"
+    },
+    "saltDelivery": {
+      "name": "Premium Salt Delivery Service",
+      "info": "First year included, $149/year after"
+    },
+    "waterQualityMonitoring": {
+      "name": "Extended Water Quality Monitoring",
+      "info": "First 2 years included, $129/year after"
+    },
+    "disclaimer": "Subscription services can be canceled at any time. Pricing subject to change."
+  },
+  "bundleDiscount": {
+    "applied": "Package pricing applied!",
+    "description": "You're getting special pricing because you've selected a conditioner with filters."
+  },
+  "subscriptionAddons": {
+    "selected": "Subscription Add-ons Selected!",
+    "description": "Your quote includes special add-ons with subscription options. The initial price covers the included period."
+  },
+  "errors": {
+    "catalogLoadFailed": "Unable to load equipment data",
+    "refreshPage": "Please check your connection and try refreshing the page."
+  },
+  "signingMethod": {
+    "title": "Select Signing Method",
+    "email": "Send via Email",
+    "sendTo": "Send to:",
+    "noEmail": "No email address provided",
+    "sms": "Send via Text Message (SMS)",
+    "noPhone": "No phone number provided",
+    "smsNote": "* US and Canadian numbers only",
+    "notes": "Notes:",
+    "emailInfo": "Email signing works for all customers worldwide",
+    "smsInfo": "SMS signing works only for US and Canadian phone numbers",
+    "needInfo": "You need either email or phone number to send signing requests",
+    "sentBySms": "Sent via text message to phone number",
+    "smsFollowup": "The customer will receive a text message with a link to sign the document"
+  },
+  "download": "Download",
+  "general": {
+    "yes": "Yes",
+    "no": "No",
+    "confirm": "Confirm",
+    "viewDocument": "View Document"
+  },
+  "navigation": {
+    "salesCalculator": "Sales Calculator",
+    "equipmentInfo": "Equipment Info",
+    "adminPanel": "Admin Panel",
+    "dashboard": "Dashboard",
+    "newQuote": "New Quote",
+    "quotes": "Quotes",
+    "back": "Back",
+    "next": "Next",
+    "add": "Add",
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "setNewPassword": "Set New Password",
+    "passwordChangeRequired": "Your password needs to be changed. Please set a new password.",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "changePassword": "Change Password",
+    "usernameOrEmail": "Username or Email",
+    "enterUsername": "Enter your username or email",
+    "password": "Password",
+    "enterPassword": "Enter your password",
+    "signingIn": "Signing in...",
+    "testCredentials": "Test credentials: testuser / TestPass123!",
+    "support": "Having trouble? Email support@miamiwaterandair.com",
+    "errors": {
+      "unknownChallenge": "Unknown authentication challenge: {{challenge}}",
+      "signInFailed": "Failed to sign in. Please check your credentials.",
+      "passwordChangeFailed": "Failed to change password. Please try again."
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome {{name}}",
+    "adminSubtitle": "Admin Dashboard",
+    "repSubtitle": "Sales Dashboard",
+    "newQuote": "Create New Quote",
+    "newQuoteDesc": "Start a new sales quote",
+    "viewEquipment": "Equipment Catalog",
+    "viewEquipmentDesc": "Browse available products",
+    "adminPanel": "Admin Panel",
+    "adminPanelDesc": "Manage system settings",
+    "totalQuotes": "Total Quotes",
+    "thisMonth": "{{count}} this month",
+    "pendingQuotes": "Pending",
+    "awaitingSignature": "Awaiting signature",
+    "signedQuotes": "Signed",
+    "completed": "Completed",
+    "totalValue": "Total Value",
+    "averageValue": "Avg: ${{amount}}",
+    "recentQuotes": "Recent Quotes",
+    "noQuotes": "No quotes yet",
+    "createFirst": "Create your first quote",
+    "viewAll": "View all quotes"
+  },
+  "validation": {
+    "required": "Required",
+    "passwordMinLength": "Must be at least 8 characters",
+    "passwordMismatch": "Passwords do not match"
+  }
+}
